@@ -1,0 +1,24 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Título</title>
+	<script>
+	// IE6+ (com detalhes), IE8+, FF3+, SF4+, CH4+, OP9+
+	function remove(remover) {
+		var el = document.getElementById(remover);
+		if (el && el.parentNode) {
+			el.parentNode.removeChild(el);
+			return true;
+		}
+		return false;
+	}
+	// ex: remove(filho)
+	</script>
+</head>
+<body>
+	<div id="pai">
+		pai
+		<div id="filho">filho</div>
+	</div>
+</body>
+</html>

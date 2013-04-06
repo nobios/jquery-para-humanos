@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Título</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+	$( document ).ready(function() {
+		$('#acoes').click(function() {
+			$('#unico').append('!!!');
+			$('.mundo').append(' classe');
+			$('input[name=nome]').val('Everson');
+			$('div .aqui').append(' **');
+			$('li:last').append(' X');
+			$('.c1, .c2').append('?');
+		});
+	});
+	</script>
+</head>
+<body>
+	<button id="acoes">Executar seleções</button>
+	<div id="unico">#unico</div>
+	<div class="mundo">
+		.mundo
+	</div>
+	<label for="nome">Nome:</label>
+	<input type="text" name="nome" />
+	<div class="teste">
+		div.teste
+		<span class="outra">.outra, </span>
+		<span class="aqui">.aqui</span>
+	</div>
+	<ul>
+		<li>Primeiro</li>
+		<li>Meio</li>
+		<li>Último</li>
+	</ul>
+	<div class="c1">Você</div>
+	<div class="c2">Eu</div>
+</body>
+</html>

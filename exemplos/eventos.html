@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>Título</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<style type="text/css">
+	.red {
+		background: red;
+	}
+	</style>
+</head>
+<body>
+	<h1>Teste</h1>
+	<form>
+		<input id="texto">
+		<input type="submit" value="Enviar">
+	</form>
+	<script>
+	$('h1').hover(function() {
+		$(this).toggleClass('red');
+	}).click(function() {
+		$(this).append('<u>!!</u>');
+	});
+	$('input').keypress(function(e) {
+		console.log(e.charCode);
+	}).dblclick(function() {
+		$(this).addClass('red')
+	});
+	$('form').submit(function(e) {
+		e.preventDefault();
+		console.log('Enviar');
+	});
+	</script>
+</body>
+</html>

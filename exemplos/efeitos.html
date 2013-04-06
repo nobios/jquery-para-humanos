@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Título</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<style type="text/css">
+	.red {
+		background: red;
+	}
+	</style>
+</head>
+<body>
+	<button id="mo">show</button>
+	<button id="es">hide</button>
+	<button id="fi">fadeIn</button>
+	<button id="fo">fadeOut</button>
+	<button id="sd">slideDown</button>
+	<button id="su">slideUp</button>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<script>
+	$('#mo').click(function() {
+		$('div').show();
+	});
+	$('#es').click(function() {
+		$('div').hide();
+	});
+	$('#fi').click(function() {
+		$('div').fadeIn(2000);
+	});
+	$('#fo').click(function() {
+		$('div').fadeOut(2000);
+	});
+	$('#sd').click(function() {
+		$('div').slideDown(2000);
+	});
+	$('#su').click(function() {
+		$('div').slideUp(2000);
+	});
+	</script>
+</body>
+</html>

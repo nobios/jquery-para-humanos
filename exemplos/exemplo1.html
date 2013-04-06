@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Título</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+	$( document ).ready(function() {
+		$('#acao1').click(function() {
+			$('ul').append('<li>Item 3</li>');
+		});
+		$('#acao2').click(function() {
+			$('h1').remove();
+		});
+	});
+	</script>
+</head>
+<body>
+	<button id="acao1">Ação 1</button>
+	<button id="acao2">Ação 2</button>
+	<h1>Teste</h1>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+	</ul>
+</body>
+</html>
