@@ -1,4 +1,4 @@
-jquery-para-humanos
+jQuery - JavaScript para seres humanos
 ===================
 
-jQuery - JavaScript para seres humanos
+Palestra ministrada no <a href="http://devitz.com">#devitz</a> 2013.
